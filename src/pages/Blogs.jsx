@@ -21,12 +21,13 @@ const Blogs = () => {
                                 />
                             <CardContent>
                                 <Typography variant="body1" component="h6" color="lightgray" sx={{fontSize: 14, mb: 2}}>{blog.date}</Typography>
-                                <Typography component="h5" color="#202140" sx={{fontWeight: "bold"}}>{blog.title}</Typography>
+                                <Typography component="h5" color="#202140" sx={{fontWeight: "bold",":hover":{color: "#ff6362"}}}>{blog.title}</Typography>
                                 <Typography variant="body1" color="lightgray">{blog.content}</Typography>
                             </CardContent>
                             <CardActions sx={{float: "right", mr: 2}}>
-                                    <Typography component="div" sx={{width: 30, height: 30, borderRadius: "50%", border: "1px solid lightgray", display: "flex", alignItems: "center", justifyContent: "center"}}>
-                                        <KeyboardArrowRightIcon/>       
+                                    <Typography className="span" component="span" sx={{fontSize: 14, mr: 1, transform: "scale(0)", transition: "all 1s ease"}}>Read more</Typography>
+                                    <Typography component="div" sx={{width: 30, height: 30, borderRadius: "50%", border: "1px solid lightgray", display: "flex", alignItems: "center", justifyContent: "center", transition: "all 1s ease",":hover":{borderColor: "#ff6362"}}}>
+                                        <KeyboardArrowRightIcon sx={{color: "#ff6362"}}/>      
                                     </Typography>
                             </CardActions>
                         </Card>
