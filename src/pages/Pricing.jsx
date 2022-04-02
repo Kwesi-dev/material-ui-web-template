@@ -6,7 +6,6 @@ const Pricing = () => {
     const handleChange = (e)=>{
         setYearly(!yearly)
     }
-    console.log(yearly)
   return (
     <Paper sx={{width: "100%", py: 10, backgroundColor: "#f2f5fa"}} elevation={0}>
         <Container maxWidth="lg">
