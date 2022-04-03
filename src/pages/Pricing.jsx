@@ -1,6 +1,59 @@
 import { Container,Typography, Box, Paper, Switch, Grid, Divider, List, ListItem, ListItemText, ListItemIcon, Button, Chip, Stack } from '@mui/material'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import { styled } from "@mui/material/styles"
 import { useState } from 'react';
+
+const IOSSwitch = styled((props) => (
+    <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
+  ))(({ theme }) => ({
+    width: 42,
+    height: 26,
+    padding: 0,
+    '& .MuiSwitch-switchBase': {
+      padding: 0,
+      margin: 2,
+      transitionDuration: '300ms',
+      '&.Mui-checked': {
+        transform: 'translateX(16px)',
+        color: '#fff',
+        '& + .MuiSwitch-track': {
+          backgroundColor: theme.palette.mode === 'dark' ? '#ff6362' : '#ff6362',
+          opacity: 1,
+          border: 0,
+        },
+        '&.Mui-disabled + .MuiSwitch-track': {
+          opacity: 0.5,
+        },
+      },
+      '&.Mui-focusVisible .MuiSwitch-thumb': {
+        color: '#33cf4d',
+        border: '6px solid #fff',
+      },
+      '&.Mui-disabled .MuiSwitch-thumb': {
+        color:
+          theme.palette.mode === 'light'
+            ? theme.palette.grey[100]
+            : theme.palette.grey[600],
+      },
+      '&.Mui-disabled + .MuiSwitch-track': {
+        opacity: theme.palette.mode === 'light' ? 0.7 : 0.3,
+      },
+    },
+    '& .MuiSwitch-thumb': {
+      boxSizing: 'border-box',
+      width: 22,
+      height: 22,
+    },
+    '& .MuiSwitch-track': {
+      borderRadius: 26 / 2,
+      backgroundColor: theme.palette.mode === 'light' ? '#ff6362' : '#ff6362',
+      opacity: 1,
+      transition: theme.transitions.create(['background-color'], {
+        duration: 500,
+      }),
+    },
+  }));
+
 const Pricing = () => {
     const [yearly, setYearly] = useState(false)
     const handleChange = (e)=>{
@@ -11,10 +64,10 @@ const Pricing = () => {
         <Container maxWidth="lg">
             <Box component="header" sx={{width: "100%", display: "flex", flexDirection: "column", alignItems: "center"}}>
                 <Typography variant="h6" color="error" sx={{fontWeight: "bold", fontSize: 14}}>PRICING FOR EVERYONE</Typography>
-                <Typography variant="h3" color="#202140" sx={{fontWeight: "bold"}}>OUR PRICING</Typography>
+                <Typography variant="h3" color="#202140" sx={{fontWeight: "bold", mb: 1}}>OUR PRICING</Typography>
                 <Stack direction="row" spacing={1} sx={{display: "flex" , alignItems: "center"}}>
                     <Typography>Monthly</Typography>
-                    <Switch size="large" onChange={handleChange}/>
+                    <IOSSwitch size="large" onChange={handleChange}/>
                     <Typography>Yearly</Typography>
                     <Chip label="Save 25%" color="error" size="small"/>
                 </Stack>
