@@ -1,6 +1,6 @@
 import p1 from "./assets/person1.webp"
 import p2 from "./assets/person2.webp"
-import p3 from "./assets/person3.webp"
+import p3 from "./assets/gallery2.webp"
 import blog1 from "./assets/blog1.webp"
 import blog2 from "./assets/blog2.webp"
 import blog3 from "./assets/blog3.webp"
@@ -8,7 +8,6 @@ import blog4 from "./assets/blog4.webp"
 import g1 from "./assets/gal_2.jpg"
 import g2 from "./assets/gal_5.jpg"
 import g3 from "./assets/gal_6.jpg"
-import g4 from "./assets/gallery4.webp"
 export const Cards = [
     {
         id: 1,
@@ -17,20 +16,20 @@ export const Cards = [
         subheader: "Owner, Greenland, Inc",
         content: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live."
     },
-    // {
-    //     id: 2,
-    //     profilePic: p2,
-    //     title: "Kaila Woodland",
-    //     subheader: "Owner, Greenland, Inc",
-    //     content: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live."
-    // },
-    // {
-    //     id: 3,
-    //     profilePic: p3,
-    //     title: "Kaila Woodland",
-    //     subheader: "Owner, Greenland, Inc",
-    //     content: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live."
-    // },
+    {
+        id: 2,
+        profilePic: p2,
+        title: "Kaila Woodland",
+        subheader: "Owner, Greenland, Inc",
+        content: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live."
+    },
+    {
+        id: 3,
+        profilePic: p3,
+        title: "Kaila Woodland",
+        subheader: "Owner, Greenland, Inc",
+        content: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live."
+    },
 
 ]
 

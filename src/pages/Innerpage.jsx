@@ -1,11 +1,18 @@
-import { Box, Paper, Container, Grid, Typography, Button, ImageList, ImageListItem } from '@mui/material'
+import { Box, Paper, Container, Grid, Typography, Button, ImageList, ImageListItem, Stack } from '@mui/material'
 import SapiensImg from "../assets/sapiens.webp"
 import Slant from "../assets/slant.svg"
 import AccordionComp from '../components/AccordionComp'
 import Slider from '../components/Slider'
 import { items } from '../dummyData'
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import GoogleIcon from '@mui/icons-material/Google'
+import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import innerpic from "../assets/innerpic1.webp"
+import Form from '../components/Form'
+import SliderSm from '../components/SliderSm'
+import Team from '../components/Team'
 const Innerpage = () => {
 
   return (
@@ -99,9 +106,32 @@ const Innerpage = () => {
                         </Box>
                     </Grid>
                     <Grid item md={6}>
+                        <Form/>
+                        <Box sx={{mt: 4}}>
+                            <Typography variant="h6"component="h6" sx={{color: "#202140", fontWeight: "bold", mb: 1}}>Social Icons</Typography>
+                            <Stack direction="row" spacing={2}>
+                                <Paper sx={{width: 40, height: 40, display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer"}}>
+                                    <FacebookOutlinedIcon sx={{":hover":{color: "#ff6362", transform: "scale(1.4)"}, transition: "all 1s ease"}}/>
+                                </Paper>
+                                <Paper sx={{width: 40, height: 40, display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer"}}>
+                                    <LinkedInIcon sx={{":hover":{color: "#ff6362", transform: "scale(1.4)"}, transition: "all 1s ease"}}/>
+                                </Paper>
+                                <Paper sx={{width: 40, height: 40, display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer"}}>
+                                    <InstagramIcon sx={{":hover":{color: "#ff6362", transform: "scale(1.4)"}, transition: "all 1s ease"}}/>
+                                </Paper>
+                                <Paper sx={{width: 40, height: 40, display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer"}}>
+                                    <GoogleIcon sx={{":hover":{color: "#ff6362", transform: "scale(1.4)"}, transition: "all 1s ease"}}/>
+                                </Paper>
+                                <Paper sx={{width: 40, height: 40, display: "flex", alignItems: "center", justifyContent: "center", cursor: "pointer"}}>
+                                    <PlayArrowIcon sx={{":hover":{color: "#ff6362", transform: "scale(1.4)"}, transition: "all 1s ease"}}/>
+                                </Paper>
+                            </Stack>
+                        </Box>
+                        <SliderSm/>
                     </Grid>
                 </Grid>
             </Container>
+            <Team/>
         </Box>
     </Paper>
   )
