@@ -35,7 +35,7 @@ const Navbar = ()=>{
                                     aria-controls={open ? "basic-menu" : undefined}
                                     aria-haspopup="true"
                                     aria-expanded={open ? "true" : undefined}
-                                    onMouseEnter={handleClick}
+                                    onClick={handleClick}
                                 >
                                     <Typography variant="span" sx={{fontSize: 18}}>DropDown</Typography>
                                     <KeyboardArrowDownIcon/>

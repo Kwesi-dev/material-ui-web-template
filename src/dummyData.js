@@ -5,6 +5,10 @@ import blog1 from "./assets/blog1.webp"
 import blog2 from "./assets/blog2.webp"
 import blog3 from "./assets/blog3.webp"
 import blog4 from "./assets/blog4.webp"
+import g1 from "./assets/gal_2.jpg"
+import g2 from "./assets/gal_5.jpg"
+import g3 from "./assets/gal_6.jpg"
+import g4 from "./assets/gallery4.webp"
 export const Cards = [
     {
         id: 1,
@@ -60,3 +64,35 @@ export const blogs = [
         content: "Vokalia and Consonantia, there live the blind texts. Separated they live."
     },
 ]
+export const items = [
+    {
+        id: 1,
+        image: g1,
+        title: "gallery"
+    },
+    {
+        id: 2,
+        image: g2,
+        title: "gallery"
+    },
+    {
+        id: 3,
+        image: g3,
+        title: "gallery"
+    },
+    {
+        id: 4,
+        image: blog4,
+        title: "gallery"
+    },
+    {
+        id: 5,
+        image: blog2,
+        title: "gallery"
+    },
+    {
+        id: 6,
+        image: blog1,
+        title: "gallery"
+    },
+] 
