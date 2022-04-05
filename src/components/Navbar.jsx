@@ -31,9 +31,11 @@ const Navbar = ()=>{
                         </Link>
                         <Box sx={{flex: 3, display: "flex", alignItems: "center", justifyContent: "space-between"}}>
                             <Box sx={{display: "flex", alignItems: "center"}}>
-                                <Box sx={{display: "flex", mr: 3, cursor: "pointer", alignItems: "center", ":hover":{ color: "#ab3849"}}}>
-                                    <Typography variant="span" sx={{fontSize: 18}}>Home</Typography>
-                                </Box>
+                                <Link to="/" style={{color: "inherit", textDecoration: "none"}}>
+                                    <Box sx={{display: "flex", mr: 3, cursor: "pointer", alignItems: "center", ":hover":{ color: "#ab3849"}}}>
+                                        <Typography variant="span" sx={{fontSize: 18}}>Home</Typography>
+                                    </Box>
+                                </Link>
                                 <Box sx={{display: "flex", mr: 3, cursor: "pointer", alignItems: "center", ":hover":{ color: "#ab3849"}}} 
                                     aria-controls={open ? "basic-menu" : undefined}
                                     aria-haspopup="true"
