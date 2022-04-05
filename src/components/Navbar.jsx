@@ -2,6 +2,7 @@ import { AppBar, Container, Toolbar, Typography, Box, Button, Menu, MenuItem } f
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { useState } from "react"
 import { KeyboardArrowRightOutlined } from "@mui/icons-material";
+import { Link } from "react-router-dom"
 const Navbar = ()=>{
     const [anchorEl, setAnchorEl] = useState(null)
     const open = Boolean(anchorEl)
@@ -17,15 +18,17 @@ const Navbar = ()=>{
             <AppBar sx={{backgroundColor: "#202140"}} elevation={0}>
                 <Container maxWidth="lg">
                     <Toolbar sx={{alignItems: "center"}}>
-                        <Typography 
-                            variant="h5"
-                            noWrap
-                            mr={4}
-                            component="div"
-                            sx={{flex: 0.3, fontWeight: "bold"}}
-                        >   
-                            Easy
-                        </Typography>
+                        <Link to="/" style={{color: "inherit", textDecoration: "none"}}>
+                            <Typography 
+                                variant="h5"
+                                noWrap
+                                mr={4}
+                                component="div"
+                                sx={{flex: 0.3, fontWeight: "bold", cursor: "pointer"}}
+                                >   
+                                Easy
+                            </Typography>
+                        </Link>
                         <Box sx={{flex: 3, display: "flex", alignItems: "center", justifyContent: "space-between"}}>
                             <Box sx={{display: "flex", alignItems: "center"}}>
                                 <Box sx={{display: "flex", mr: 3, cursor: "pointer", alignItems: "center", ":hover":{ color: "#ab3849"}}}>
@@ -51,12 +54,16 @@ const Navbar = ()=>{
                                     <MenuItem onClick={handleClose} sx={{":hover":{color: "red"}}}>menuItem two<KeyboardArrowRightOutlined/></MenuItem>
                                     <MenuItem onClick={handleClose}>menuItem three</MenuItem>
                                 </Menu>
-                                <Box sx={{display: "flex", mr: 3, cursor: "pointer", alignItems: "center", ":hover":{ color: "#ab3849"}}}>
-                                    <Typography variant="span" sx={{fontSize: 18}}>Inner Page</Typography>
-                                </Box>
-                                <Box sx={{display: "flex", mr: 3, cursor: "pointer", alignItems: "center", ":hover":{ color: "#ab3849"}}}>
-                                    <Typography variant="span" sx={{fontSize: 18}}>Contact Us</Typography>
-                                </Box>
+                                <Link to="/innerpage" style={{color: "inherit", textDecoration: "none"}}>
+                                    <Box sx={{display: "flex", mr: 3, cursor: "pointer", alignItems: "center", ":hover":{ color: "#ab3849"}}}>
+                                        <Typography variant="span" sx={{fontSize: 18}}>Inner Page</Typography>
+                                    </Box>
+                                </Link>
+                                <Link to="/contact" style={{color: "inherit", textDecoration: "none"}}>
+                                    <Box sx={{display: "flex", mr: 3, cursor: "pointer", alignItems: "center", ":hover":{ color: "#ab3849"}}}>
+                                        <Typography variant="span" sx={{fontSize: 18}}>Contact Us</Typography>
+                                    </Box>
+                                </Link>
                             </Box>
                             <Box>
                                 <Button variant="outlined" color="error" sx={{color: "#ffff", borderRadius: 5, fontSize: 14}}>free templates</Button>

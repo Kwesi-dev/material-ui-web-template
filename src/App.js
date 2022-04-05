@@ -1,21 +1,22 @@
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import Blogs from "./pages/Blogs";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Contact from "./pages/Contact";
-import FeatureLg from "./pages/FeatureLg";
-import Features from "./pages/Features";
-import Home from "./pages/Home"
+import Homepage from "./pages/Homepage";
 import Innerpage from "./pages/Innerpage";
 import Layout from "./pages/Layout";
-import Pricing from "./pages/Pricing";
-import Testimonial from "./pages/Testimonial";
 function App() {
   return (
-    <>
-      <Layout>
-        <Innerpage/>
-      </Layout>
-    </>
+    <Router>
+      <>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Homepage/>}/>
+            <Route path="/innerpage" element={<Innerpage/>}/>
+            <Route path="/contact" element={<Contact/>}/>
+          </Routes>
+        </Layout>
+      </>
+    </Router>
   );
 }
 
