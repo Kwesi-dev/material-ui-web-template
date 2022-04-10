@@ -73,7 +73,7 @@ const Pricing = () => {
                 </Stack>
             </Box>
             <Grid container sx={{mt: 10}}>
-                <Grid item md={4}>
+                <Grid item mobile={6} md={4}>
                     <Paper elevation={0} sx={{backgroundColor: "#f2f5fa", height: 500, width: "90%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-around"}}>
                         <Box sx={{pt: 4, boxSizing: "border-box"}}>
                             <Typography variant="h5" color="#202140" sx={{textAlign: "center", fontWeight: "bold", mb: 3}}>Personal</Typography>
@@ -114,7 +114,7 @@ const Pricing = () => {
                         <Button variant="contained" color="error" sx={{borderRadius: 4, mb: 2}}>Get Started</Button>
                     </Paper>
                 </Grid>
-                <Grid item md={4}>
+                <Grid item mobile={6} md={4}>
                     <Paper elevation={0} sx={{height: 500, width: "90%",  display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-around"}}>
                         <Box sx={{pt: 4, boxSizing: "border-box"}}>
                             <Typography variant="h5" color="#202140" sx={{textAlign: "center", fontWeight: "bold", mb: 3}}>Enterprise</Typography>
@@ -155,7 +155,7 @@ const Pricing = () => {
                         <Button variant="contained" color="error" sx={{borderRadius: 4, mb: 2}}>Get Started</Button>
                     </Paper>
                 </Grid>
-                <Grid item md={4}>
+                <Grid item mobile={6} md={4}>
                 <Paper elevation={0} sx={{backgroundColor: "#f2f5fa", height: 500, width: "90%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-around"}}>
                         <Box sx={{pt: 4, boxSizing: "border-box"}}>
                             <Typography variant="h5" color="#202140" sx={{textAlign: "center", fontWeight: "bold", mb: 3}}>Enterprise</Typography>

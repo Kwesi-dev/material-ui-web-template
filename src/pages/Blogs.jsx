@@ -11,7 +11,7 @@ const Blogs = () => {
             </Box>
             <Grid container spacing={3}>
                 {blogs.map((blog)=>
-                    <Grid item md={3} key={blog.id}>
+                    <Grid item mobile={6} md={3} key={blog.id}>
                         <Card sx={{cursor: "pointer"}}>
                             <CardMedia
                                 component="img"

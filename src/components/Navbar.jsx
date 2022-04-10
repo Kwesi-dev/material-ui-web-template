@@ -29,7 +29,7 @@ const Navbar = ()=>{
                                 Easy
                             </Typography>
                         </Link>
-                        <Box sx={{flex: 3, display: "flex", alignItems: "center", justifyContent: "space-between"}}>
+                        <Box sx={{flex: 3, display: {xs: "none", md:"flex"}, alignItems: "center", justifyContent: "space-between"}}>
                             <Box sx={{display: "flex", alignItems: "center"}}>
                                 <Link to="/" style={{color: "inherit", textDecoration: "none"}}>
                                     <Box sx={{display: "flex", mr: 3, cursor: "pointer", alignItems: "center", ":hover":{ color: "#ab3849"}}}>
@@ -63,7 +63,7 @@ const Navbar = ()=>{
                                 </Link>
                                 <Link to="/contact" style={{color: "inherit", textDecoration: "none"}}>
                                     <Box sx={{display: "flex", mr: 3, cursor: "pointer", alignItems: "center", ":hover":{ color: "#ab3849"}}}>
-                                        <Typography variant="span" sx={{fontSize: 18}}>Contact Us</Typography>
+                                        <Typography variant="span" sx={{fontSize: {md: 16, laptop: 18}}}>Contact Us</Typography>
                                     </Box>
                                 </Link>
                             </Box>

@@ -6,7 +6,7 @@ const Footer = () =>{
         <Paper sx={{width: "100%", pt: 10, pb: 6, backgroundColor: "#f2f5fa"}} elevation={0}>
             <Container maxWidth="lg">
                 <Grid container>
-                    <Grid item md={6}>
+                    <Grid item mobile={6} md={6}>
                         <Box>
                             <Typography variant="h6" color="#202140" sx={{fontWeight: "bold", mb: 2}}>About</Typography>
                             <Typography variant="body1" color="#202140" sx={{width: "60%"}}>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live.</Typography>
@@ -32,10 +32,10 @@ const Footer = () =>{
                             </Stack>
                         </Box>
                     </Grid>
-                    <Grid item md={6}>
+                    <Grid item mobile={6} md={6}>
                         <Typography  variant="h6" color="#202140" sx={{fontWeight: "bold"}}>Navigations</Typography>
                         <Grid container sx={{cursor: "pointer"}}>
-                            <Grid item md={4}>
+                            <Grid item mobile={4} md={4}>
                                 <List disablePadding>
                                     <ListItem disablePadding>
                                         <ListItemText color="#202140" sx={{":hover":{color: "#ff6362"}}}>Home</ListItemText>
@@ -54,7 +54,7 @@ const Footer = () =>{
                                     </ListItem>
                                 </List>
                             </Grid>
-                            <Grid item md={4}>
+                            <Grid item mobile={4} md={4}>
                             <List disablePadding>
                                     <ListItem disablePadding>
                                         <ListItemText color="#202140" sx={{":hover":{color: "#ff6362"}}}>Press</ListItemText>
@@ -73,7 +73,7 @@ const Footer = () =>{
                                     </ListItem>
                                 </List>
                             </Grid>
-                            <Grid item md={4}>
+                            <Grid item mobile={4} md={4}>
                             <List disablePadding>
                                     <ListItem disablePadding>
                                         <ListItemText color="#202140" sx={{":hover":{color: "#ff6362"}}}>Privacy</ListItemText>

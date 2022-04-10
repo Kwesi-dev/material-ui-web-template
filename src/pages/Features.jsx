@@ -39,7 +39,7 @@ const Features = () => {
                 </Typography>
             </Box>
             <Grid container spacing={3} sx={{mb: 10}}>
-                <Grid item md={4}>
+                <Grid item mobile={6} md={4}>
                     <Paper sx={{width: 90, height: 90, borderRadius: 5, display: "flex", alignItems: "center", justifyContent: "center", mb: 4}}>
                         <img src={coins} alt="" style={{width: 60, height: 60, objectFit: "cover"}}/>
                     </Paper>
@@ -48,7 +48,7 @@ const Features = () => {
                         Manage your invoces fromcreation to payment. With Upflow you'll collect 100% of.
                     </Typography>
                 </Grid>
-                <Grid item md={4}>
+                <Grid item mobile={6} md={4}>
                     <Paper sx={{width: 90, height: 90, borderRadius: 5, display: "flex", alignItems: "center", justifyContent: "center", mb: 4}}>
                         <img src={stats} alt="" style={{width: 60, height: 60, objectFit: "cover"}}/>
                     </Paper>
@@ -57,7 +57,7 @@ const Features = () => {
                         Manage your invoces fromcreation to payment. With Upflow you'll collect 100% of.
                     </Typography>
                 </Grid>
-                <Grid item md={4}>
+                <Grid item mobile={6} md={4}>
                     <Paper sx={{width: 90, height: 90, borderRadius: 5, display: "flex", alignItems: "center", justifyContent: "center", mb: 4}}>
                         <img src={garage} alt="" style={{width: 60, height: 60, objectFit: "cover"}}/>
                     </Paper>
@@ -66,9 +66,7 @@ const Features = () => {
                         Manage your invoces fromcreation to payment. With Upflow you'll collect 100% of.
                     </Typography>
                 </Grid>
-            </Grid>
-            <Grid container spacing={3}>
-                <Grid item md={4}>
+                <Grid item mobile={6} md={4}>
                     <Paper sx={{width: 90, height: 90, borderRadius: 5, display: "flex", alignItems: "center", justifyContent: "center", mb: 4}}>
                         <img src={notebook} alt="" style={{width: 60, height: 60, objectFit: "cover"}}/>
                     </Paper>
@@ -77,7 +75,7 @@ const Features = () => {
                         Manage your invoces fromcreation to payment. With Upflow you'll collect 100% of.
                     </Typography>
                 </Grid>
-                <Grid item md={4}>
+                <Grid item mobile={6} md={4}>
                     <Paper sx={{width: 90, height: 90, borderRadius: 5, display: "flex", alignItems: "center", justifyContent: "center", mb: 4}}>
                         <img src={gold} alt="" style={{width: 60, height: 60, objectFit: "cover"}}/>
                     </Paper>
@@ -86,7 +84,7 @@ const Features = () => {
                         Manage your invoces fromcreation to payment. With Upflow you'll collect 100% of.
                     </Typography>
                 </Grid>
-                <Grid item md={4}>
+                <Grid item mobile={6} md={4}>
                     <Paper sx={{width: 90, height: 90, borderRadius: 5, display: "flex", alignItems: "center", justifyContent: "center", mb: 4}}>
                         <img src={brochure} alt="" style={{width: 60, height: 60, objectFit: "cover"}}/>
                     </Paper>

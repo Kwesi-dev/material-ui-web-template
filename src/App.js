@@ -11,6 +11,18 @@ const theme = createTheme({
     fontFamily:[
       "Montserrat"
     ]
+  },
+  breakpoints: {
+    values: {
+      xs: 0,
+      mobile: 425,
+      sm: 600,
+      tablet: 768,
+      md: 900,
+      laptop: 1024,
+      lg: 1200,
+      xl: 1536,
+    },
   }
 })
 function App() {
