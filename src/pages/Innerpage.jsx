@@ -13,6 +13,7 @@ import innerpic from "../assets/innerpic1.webp"
 import Form from '../components/Form'
 import SliderSm from '../components/SliderSm'
 import Team from '../components/Team'
+import ImageListMobile from '../components/ImageListMobile'
 const Innerpage = () => {
 
   return (
@@ -79,7 +80,7 @@ const Innerpage = () => {
                 <Grid container columnSpacing={3} sx={{mt: 10}}>
                     <Grid item md={6}>
                         <AccordionComp/>
-                        <Box component="section" sx={{mt: 5}}>
+                        <Box component="section" sx={{mt: 5, display: {xs: "none", mobile: "block"}}}>
                             <Typography variant="h6" component="h6" sx={{color: "#202140", fontWeight: "bold", mb: 1}}>Gallery</Typography>
                             <ImageList sx={{width: "100%", height: {mobile: "75vh", md:"60vh" }}} cols={3} rowHeight={180} gap={16}>
                                 {items.map((item)=>
@@ -95,6 +96,7 @@ const Innerpage = () => {
                                 )}
                             </ImageList>
                         </Box>
+                        <ImageListMobile/>
                         <Box component="section">
                             <Typography variant="h6" component="h6" sx={{color: "#202140", fontWeight: "bold", mb: 1}}>Video</Typography>
                             <Typography component="div" sx={{position: "relative", width: "100%", cursor: "pointer"}}>
