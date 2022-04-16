@@ -64,7 +64,7 @@ const Pricing = () => {
         <Container maxWidth="lg">
             <Box component="header" sx={{width: "100%", display: "flex", flexDirection: "column", alignItems: "center"}}>
                 <Typography variant="h6" color="error" sx={{fontWeight: "bold", fontSize: 14}}>PRICING FOR EVERYONE</Typography>
-                <Typography variant="h3" color="#202140" sx={{fontWeight: "bold", mb: 1}}>OUR PRICING</Typography>
+                <Typography variant="h3" color="#202140" sx={{fontWeight: "bold", mb: 1, textAlign: "center", fontSize: {xs: "1.6rem"}}}>OUR PRICING</Typography>
                 <Stack direction="row" spacing={1} sx={{display: "flex" , alignItems: "center"}}>
                     <Typography>Monthly</Typography>
                     <IOSSwitch size="large" onChange={handleChange}/>
@@ -73,8 +73,8 @@ const Pricing = () => {
                 </Stack>
             </Box>
             <Grid container sx={{mt: 10}}>
-                <Grid item mobile={6} md={4}>
-                    <Paper elevation={0} sx={{backgroundColor: "#f2f5fa", height: 500, width: "90%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-around"}}>
+                <Grid item xs={12} sm={6} md={4}>
+                    <Paper elevation={0} sx={{backgroundColor: "#f2f5fa", height: 500, width: "90%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-around", m: {xs: "0 auto", sm: 0}}}>
                         <Box sx={{pt: 4, boxSizing: "border-box"}}>
                             <Typography variant="h5" color="#202140" sx={{textAlign: "center", fontWeight: "bold", mb: 3}}>Personal</Typography>
                             <Typography variant="body1" color="lightgray" sx={{textAlign: "center", pb: 3}}>Far far away, behind the word mountains</Typography>
@@ -114,8 +114,8 @@ const Pricing = () => {
                         <Button variant="contained" color="error" sx={{borderRadius: 4, mb: 2}}>Get Started</Button>
                     </Paper>
                 </Grid>
-                <Grid item mobile={6} md={4}>
-                    <Paper elevation={0} sx={{height: 500, width: "90%",  display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-around"}}>
+                <Grid item xs={12} sm={6} md={4}>
+                    <Paper elevation={0} sx={{height: 500, width: "90%",  display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-around", m: {xs: "0 auto", sm: 0}}}>
                         <Box sx={{pt: 4, boxSizing: "border-box"}}>
                             <Typography variant="h5" color="#202140" sx={{textAlign: "center", fontWeight: "bold", mb: 3}}>Enterprise</Typography>
                             <Typography  variant="body1" color="lightgray" sx={{textAlign: "center", pb: 3}}>Far far away, behind the word mountains</Typography>
@@ -155,8 +155,8 @@ const Pricing = () => {
                         <Button variant="contained" color="error" sx={{borderRadius: 4, mb: 2}}>Get Started</Button>
                     </Paper>
                 </Grid>
-                <Grid item mobile={6} md={4}>
-                <Paper elevation={0} sx={{backgroundColor: "#f2f5fa", height: 500, width: "90%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-around"}}>
+                <Grid item xs={12} sm={6} md={4}>
+                <Paper elevation={0} sx={{backgroundColor: "#f2f5fa", height: 500, width: "90%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-around", m: {xs: "0 auto", sm: 0}}}>
                         <Box sx={{pt: 4, boxSizing: "border-box"}}>
                             <Typography variant="h5" color="#202140" sx={{textAlign: "center", fontWeight: "bold", mb: 3}}>Enterprise</Typography>
                             <Typography variant="body1" color="lightgray" sx={{textAlign: "center", pb: 3}}>Far far away, behind the word mountains</Typography>

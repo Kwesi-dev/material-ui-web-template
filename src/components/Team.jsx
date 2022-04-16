@@ -13,14 +13,14 @@ const Team = () => {
                 <Typography variant="h4" color="#202140" sx={{textAlign: "center", fontWeight: "bold", mb: 1}}>Our Team</Typography>
             </Box>
             <Grid container columnSpacing={8} sx={{mb: 4}}>
-                <Grid item md={6}>
+                <Grid item mobile={6}>
                     <Box component="img" src={team1} alt="team pictures" sx={{width: "100%", borderRadius: 6}}/>
                     <Typography component="section">
                         <Typography sx={{fontWeight: "bold"}}>James Watson</Typography>
                         <Typography sx={{color: "lightgray", fontWeight: "bold"}}>Co-Founder & CEO</Typography>
                     </Typography>
                 </Grid>
-                <Grid item md={6} sx={{mt: 5}}>
+                <Grid item mobile={6} sx={{mt: 5}}>
                     <Box component="img" src={team2} alt="team pictures" sx={{width: "100%", borderRadius: 6}}/>
                     <Typography component="section">
                         <Typography sx={{fontWeight: "bold"}}>James Watson</Typography>
@@ -29,14 +29,14 @@ const Team = () => {
                 </Grid>
             </Grid>
             <Grid container columnSpacing={8}>
-                <Grid item md={6}>
+                <Grid item mobile={6}>
                     <Box component="img" src={team3} alt="team pictures" sx={{width: "100%", borderRadius: 6}}/>
                     <Typography component="section">
                         <Typography sx={{fontWeight: "bold"}}>James Watson</Typography>
                         <Typography sx={{color: "lightgray", fontWeight: "bold"}}>Co-Founder & CEO</Typography>
                     </Typography>
                 </Grid>
-                <Grid item md={6} sx={{mt: 5}}>
+                <Grid item mobile={6} sx={{mt: 5}}>
                     <Box component="img" src={team4} alt="team pictures" sx={{width: "100%", borderRadius: 6}}/>
                     <Typography component="section">
                         <Typography sx={{fontWeight: "bold"}}>James Watson</Typography>

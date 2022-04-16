@@ -4,56 +4,56 @@ import React from 'react'
 
 const Form = () => {
   return (
-      <Box>
+      <Box sx={{width: "100%"}}>
         <Typography variant="h6"component="h6" sx={{color: "#202140", fontWeight: "bold", mb: 1}}>Form</Typography>
         <Paper>
             <Box component="form" sx={{px: 6, py: 10, boxSizing: "border-box"}} elevation={0}>
                 <Grid container columnSpacing={2} sx={{mb: 2}}>
-                    <Grid item md={6}>
-                        <Typography component="h6" sx={{mb: 0.5}}>First name</Typography>
+                    <Grid item xs={12} sm={6}>
+                        <Typography component="h6" sx={{mb: 0.5, fontSize: { xs: "0.9rem", mobile: "1rem"}}}>First name</Typography>
                             <TextField
                                 id="text-input"
                                 type="text"
-                                sx={{width: "100%"}}
+                                sx={{width: "100%", fontSize: { xs: "0.9rem", mobile: "1rem"}}}
                                 />
                     </Grid>
-                    <Grid item md={6}>
-                        <Typography component="h6" sx={{mb: 0.5}}>Last name</Typography>
+                    <Grid item xs={12} sm={6}>
+                        <Typography component="h6" sx={{mb: 0.5, fontSize: { xs: "0.9rem", mobile: "1rem"}}}>Last name</Typography>
                             <TextField
                                 id="text-input"
                                 type="text"
-                                sx={{width: "100%"}}
+                                sx={{width: "100%", fontSize: { xs: "0.9rem", mobile: "1rem"}}}
                                 />
                     </Grid>
                 </Grid>
                 <Box component="section" sx={{mb: 1}}>
-                    <Typography sx={{mb: 0.5}}>Email address</Typography>
+                    <Typography sx={{mb: 0.5, fontSize: { xs: "0.9rem", mobile: "1rem"}}}>Email address</Typography>
                     <TextField
                         id="email-input"
                         type="email"
-                        sx={{width: "100%"}}
+                        sx={{width: "100%", fontSize: { xs: "0.9rem", mobile: "1rem"}}}
                         helperText="we'll never share your email with anyone else"
                     />      
                 </Box>
                 <Box component="section" sx={{mb: 1}}>
-                    <Typography sx={{mb: 0.5}}>password</Typography>
+                    <Typography sx={{mb: 0.5, fontSize: { xs: "0.9rem", mobile: "1rem"}}}>password</Typography>
                     <TextField
                         id="password-input"
                         type="password"
-                        sx={{width: "100%"}}
+                        sx={{width: "100%", fontSize: { xs: "0.9rem", mobile: "1rem"}}}
                     />      
                 </Box>
                 <Box cpmponent="section" sx={{mb: 1}}>
-                    <Typography component="h6" sx={{mb: 0.5}}>Message</Typography>
+                    <Typography component="h6" sx={{mb: 0.5, fontSize: { xs: "0.9rem", mobile: "1rem"}}}>Message</Typography>
                     <TextField
                         multiline
                         minRows={4}
                         aria-label="message textarea"
-                        sx={{width: "100%"}}
+                        sx={{width: "100%", fontSize: { xs: "0.9rem", mobile: "1rem"}}}
                     />
                 </Box>
-                <Box cpmponent="section" sx={{mb: 1}}>
-                    <Typography component="h6" sx={{mb: 0.5}}>Select</Typography>
+                <Box cpmponent="section" sx={{mb: 1, fontSize: { xs: "0.9rem", mobile: "1rem"}}}>
+                    <Typography component="h6" sx={{mb: 0.5, fontSize: { xs: "0.9rem", mobile: "1rem"}}}>Select</Typography>
                     <FormControl fullWidth>
                         <InputLabel id="demo-simple-select-label">KwesiDev</InputLabel>
                         <Select
@@ -67,9 +67,9 @@ const Form = () => {
                     </FormControl>
                 </Box>
                 <Box component="section" sx={{mb: 1}}>
-                    <FormControlLabel control={<Checkbox defaultChecked color="error"/>} label="Frontend Developer" />
+                    <FormControlLabel control={<Checkbox defaultChecked color="error"/>} label="Frontend Developer" sx={{fontSize: { xs: "0.9rem", mobile: "1rem"}}}/>
                 </Box>
-                <Button>Submit</Button>
+                <Button sx={{fontSize: { xs: "0.9rem", mobile: "1rem"}}}>Submit</Button>
             </Box>
         </Paper>
     </Box>

@@ -18,20 +18,20 @@ const Innerpage = () => {
   return (
     <Paper sx={{backgroundColor: "#f2f5fa"}}>
          <Box 
-        sx={(theme)=>({backgroundColor: "#202140", height: `calc(100vh - ${theme.mixins.toolbar.minHeight}px)`, width:"100%", overflowX: "hidden",position: "relative", top: `${theme.mixins.toolbar.minHeight}px`})} elevation={0}>
+        sx={(theme)=>({backgroundColor: "#202140", height: { xs: "100%", md: `calc(100vh - ${theme.mixins.toolbar.minHeight}px)`}, width:"100%", overflowX: "hidden",position: "relative", top: `${theme.mixins.toolbar.minHeight}px`})} elevation={0}>
             <Container maxWidth="lg" sx={{height: "100%"}}>
-                <Grid container alignItems="center" justifyContent="center" sx={{height: "80%"}}>
-                    <Grid item xs={12} md={6} sx={{pl: 3}}>
-                        <Box sx={{width: "80%", mb: 4}}>
-                            <Typography variant="h3" component="h3" color="#ffff" sx={{fontWeight: "bold", mb: 2}}>Elements & Insights</Typography>
+                <Grid container alignItems="center" justifyContent="center" sx={{width: "100%", height: "80%", m: {xs: "0 auto"}}}>
+                    <Grid item xs={12} md={6} sx={{pl: 3, display: {xs: 'flex', md: "block"}, flexDirection: {xs: "column", md: "inherit"}, justifyContent: {xs: "center", md: "inherit"}, alignItems: {xs: "center", md: "inherit"}}}>
+                        <Box sx={{width: "80%", mb: 4, mt:{xs: 10, md: "inherit"}}}>
+                            <Typography variant="h3" component="h3" color="#ffff" sx={{fontWeight: "bold", mb: 2, fontSize: { xs: "1.8rem", sm: "2.4rem", md: "2.4rem", laptop: "3rem"}, textAlign: {xs: "center", md: "inherit"}}}>Elements & Insights</Typography>
                         </Box>
-                        <Typography variant="body1" component="div"color="#ffff" sx={{width: "80%", mb: 4}}>
+                        <Typography variant="body1" component="div"color="#ffff" sx={{width: {xs: "100%", sm: "80%"}, mb: 4, textAlign: {xs: "center", md: "inherit"}, fontSize: { xs: "0.9rem", sm: "1.1rem"}}}>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dicta tempore dolorem harum quae placeat, laudantium, animi quis ratione alias
                         </Typography>
                         <Button variant="contained" color="error" size="large" sx={{borderRadius: 6}}>Get Started</Button>
                     </Grid> 
-                    <Grid item xs={12} md={6} alignItems="center" justifyContent="flex-end" sx={{zIndex: 4, width: "100%", height: "100%", pt: 6}}>
-                        <img src={SapiensImg} alt="homepage img" style={{width: "80%", height: "100%", objectFit: "contain", float: "right"}}/>
+                    <Grid item xs={12} md={6} alignItems="center" justifyContent="flex-end" sx={{zIndex: 4, width: "100%", height: "100%", pt: 6, display: {xs: 'flex', md: "block"}, flexDirection: {xs: "column", md: "inherit"}, justifyContent: {xs: "center", md: "inherit"}, alignItems: {xs: "center", md: "inherit"}}}>
+                     <Box component="img" src={SapiensImg} alt="homepage img" sx={{width: {xs: "70%", sm: "80%",md: "100%"}, height: {xs: "70%", sm: "80%", md: "100%"}, objectFit: "contain", float:"right"}}/>
                     </Grid> 
                 </Grid>
             </Container>
@@ -40,16 +40,16 @@ const Innerpage = () => {
         <Box sx={(theme)=>({pt: `${theme.mixins.toolbar.minHeight}px`, pb: 4})}>
             <Container maxWidth="lg" sx={{pt: 4}}>
                 <Grid container sx={{mb: 2}}>
-                    <Grid item md={6}>
-                        <Typography variant="body1" component="p" sx={{width: "80%"}}>
+                    <Grid item sm={6} sx={{mb: {xs: 2, md: 0}}}>
+                        <Typography variant="body1" component="p" sx={{width: "80%", fontSize: { xs: "0.9rem", mobile: "1rem"}}}>
                             Far far away, behind the word mountains, far from the
                             countries Vokalia and Consonantia, there live the blind
                             texts. Separated they live in Bookmarksgrove right at
                             the coast of the Semantics, a large language ocean.
                         </Typography>
                     </Grid>
-                    <Grid item md={6}>
-                        <Typography variant="body1" component="p" sx={{width: "80%"}}>
+                    <Grid item sm={6}>
+                        <Typography variant="body1" component="p" sx={{width: "80%", fontSize: { xs: "0.9rem", mobile: "1rem"}}}>
                             Far far away, behind the word mountains, far from the
                             countries Vokalia and Consonantia, there live the blind
                             texts. Separated they live in Bookmarksgrove right at
@@ -58,16 +58,16 @@ const Innerpage = () => {
                     </Grid>
                 </Grid>
                 <Grid container>
-                    <Grid item md={6}>
-                        <Typography variant="body1" component="p" sx={{width: "80%"}}>
+                    <Grid item sm={6} sx={{mb: {xs: 2, md: 0}}}>
+                        <Typography variant="body1" component="p" sx={{width: "80%", fontSize: { xs: "0.9rem", mobile: "1rem"}}}>
                             A small river named Duden flows by their place and
                             supplies it with the necessary regelialia. It is a
                             paradisematic country, in which roasted parts of
                             sentences fly into your mouth.
                         </Typography>
                     </Grid>
-                    <Grid item md={6}>
-                        <Typography variant="body1" component="p" sx={{width: "80%"}}>
+                    <Grid item sm={6}>
+                        <Typography variant="body1" component="p" sx={{width: "80%", fontSize: { xs: "0.9rem", mobile: "1rem"}}}>
                             A small river named Duden flows by their place and
                             supplies it with the necessary regelialia. It is a
                             paradisematic country, in which roasted parts of
@@ -81,7 +81,7 @@ const Innerpage = () => {
                         <AccordionComp/>
                         <Box component="section" sx={{mt: 5}}>
                             <Typography variant="h6" component="h6" sx={{color: "#202140", fontWeight: "bold", mb: 1}}>Gallery</Typography>
-                            <ImageList sx={{width: "100%", height: "60vh"}} cols={3} rowHeight={180} gap={16}>
+                            <ImageList sx={{width: "100%", height: {mobile: "75vh", md:"60vh" }}} cols={3} rowHeight={180} gap={16}>
                                 {items.map((item)=>
                                     <ImageListItem key={item.key} sx={{cursor: "pointer"}}>
                                         <img 
@@ -105,7 +105,7 @@ const Innerpage = () => {
                             </Typography>
                         </Box>
                     </Grid>
-                    <Grid item md={6}>
+                    <Grid item md={6} sx={{width: "100%"}}>
                         <Form/>
                         <Box sx={{mt: 4}}>
                             <Typography variant="h6"component="h6" sx={{color: "#202140", fontWeight: "bold", mb: 1}}>Social Icons</Typography>

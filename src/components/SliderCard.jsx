@@ -11,7 +11,7 @@ const SliderCard = ({card}) => {
             sx={{display: "flex", alignItems: "center", flexDirection: "column"}}
         />
         <CardContent sx={{width: "100%", display: "flex", justifyContent: "center"}}>
-            <Typography sx={{textAlign: "center", fontWeight: "bold", mb: 3, width: "90%", fontSize: 18}}>
+            <Typography sx={{textAlign: "center", fontWeight: "bold", mb: 3,mx: "auto",  width: "90%", fontSize: { xs: "0.9rem", mobile: "1rem"}}}>
             "There live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean."
             </Typography>
         </CardContent>

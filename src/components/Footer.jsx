@@ -6,10 +6,10 @@ const Footer = () =>{
         <Paper sx={{width: "100%", pt: 10, pb: 6, backgroundColor: "#f2f5fa"}} elevation={0}>
             <Container maxWidth="lg">
                 <Grid container>
-                    <Grid item mobile={6} md={6}>
+                    <Grid item xs={12} sm={6} md={6}>
                         <Box>
                             <Typography variant="h6" color="#202140" sx={{fontWeight: "bold", mb: 2}}>About</Typography>
-                            <Typography variant="body1" color="#202140" sx={{width: "60%"}}>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live.</Typography>
+                            <Typography variant="body1" color="#202140" sx={{width: {xs: "100%", sm: "60%"}, fontSize: { xs: "0.9rem", mobile: "1rem"}}}>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live.</Typography>
                         </Box>
                         <Box sx={{mb: 2}}>
                             <Typography variant="h6" color="#202140" sx={{fontWeight: "bold", my: 2}}>Connect with us</Typography>
@@ -32,70 +32,70 @@ const Footer = () =>{
                             </Stack>
                         </Box>
                     </Grid>
-                    <Grid item mobile={6} md={6}>
+                    <Grid item xs={12} sm={6} md={6}>
                         <Typography  variant="h6" color="#202140" sx={{fontWeight: "bold"}}>Navigations</Typography>
                         <Grid container sx={{cursor: "pointer"}}>
-                            <Grid item mobile={4} md={4}>
+                            <Grid item xs={6} mobile={4}>
                                 <List disablePadding>
                                     <ListItem disablePadding>
-                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362"}}}>Home</ListItemText>
+                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362"},fontSize: { xs: "0.9rem", mobile: "1rem"}}}>Home</ListItemText>
                                     </ListItem>
                                     <ListItem disablePadding>
-                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362"}}}>Services</ListItemText>
+                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362", fontSize: { xs: "0.9rem", mobile: "1rem"}}}}>Services</ListItemText>
                                     </ListItem>
                                     <ListItem disablePadding>
-                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362"}}}>Work</ListItemText>
+                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362", fontSize: { xs: "0.9rem", mobile: "1rem"}}}}>Work</ListItemText>
                                     </ListItem>
                                     <ListItem disablePadding>
-                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362"}}}>Process</ListItemText>
+                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362", fontSize: { xs: "0.9rem", mobile: "1rem"}}}}>Process</ListItemText>
                                     </ListItem>
                                     <ListItem disablePadding>
-                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362"}}}>About Us</ListItemText>
-                                    </ListItem>
-                                </List>
-                            </Grid>
-                            <Grid item mobile={4} md={4}>
-                            <List disablePadding>
-                                    <ListItem disablePadding>
-                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362"}}}>Press</ListItemText>
-                                    </ListItem>
-                                    <ListItem disablePadding>
-                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362"}}}>Blog</ListItemText>
-                                    </ListItem>
-                                    <ListItem disablePadding>
-                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362"}}}>Contact</ListItemText>
-                                    </ListItem>
-                                    <ListItem disablePadding>
-                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362"}}}>Support</ListItemText>
-                                    </ListItem>
-                                    <ListItem disablePadding>
-                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362"}}}>Privacy</ListItemText>
+                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362", fontSize: { xs: "0.9rem", mobile: "1rem"}}}}>About Us</ListItemText>
                                     </ListItem>
                                 </List>
                             </Grid>
-                            <Grid item mobile={4} md={4}>
+                            <Grid item xs={6} mobile={4}>
                             <List disablePadding>
                                     <ListItem disablePadding>
-                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362"}}}>Privacy</ListItemText>
+                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362", fontSize: { xs: "0.9rem", mobile: "1rem"}}}}>Press</ListItemText>
                                     </ListItem>
                                     <ListItem disablePadding>
-                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362"}}}>FAQ</ListItemText>
+                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362", fontSize: { xs: "0.9rem", mobile: "1rem"}}}}>Blog</ListItemText>
                                     </ListItem>
                                     <ListItem disablePadding>
-                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362"}}}>Careers</ListItemText>
+                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362", fontSize: { xs: "0.9rem", mobile: "1rem"}}}}>Contact</ListItemText>
                                     </ListItem>
                                     <ListItem disablePadding>
-                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362"}}}>Process</ListItemText>
+                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362", fontSize: { xs: "0.9rem", mobile: "1rem"}}}}>Support</ListItemText>
                                     </ListItem>
                                     <ListItem disablePadding>
-                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362"}}}>About Us</ListItemText>
+                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362", fontSize: { xs: "0.9rem", mobile: "1rem"}}}}>Privacy</ListItemText>
+                                    </ListItem>
+                                </List>
+                            </Grid>
+                            <Grid item xs={6} mobile={4}>
+                            <List disablePadding>
+                                    <ListItem disablePadding>
+                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362", fontSize: { xs: "0.9rem", mobile: "1rem"}}}}>Privacy</ListItemText>
+                                    </ListItem>
+                                    <ListItem disablePadding>
+                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362", fontSize: { xs: "0.9rem", mobile: "1rem"}}}}>FAQ</ListItemText>
+                                    </ListItem>
+                                    <ListItem disablePadding>
+                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362", fontSize: { xs: "0.9rem", mobile: "1rem"}}}}>Careers</ListItemText>
+                                    </ListItem>
+                                    <ListItem disablePadding>
+                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362", fontSize: { xs: "0.9rem", mobile: "1rem"}}}}>Process</ListItemText>
+                                    </ListItem>
+                                    <ListItem disablePadding>
+                                        <ListItemText color="#202140" sx={{":hover":{color: "#ff6362", fontSize: { xs: "0.9rem", mobile: "1rem"}}}}>About Us</ListItemText>
                                     </ListItem>
                                 </List>
                             </Grid>
                         </Grid>
                     </Grid>
                 </Grid>
-                <Typography variant="body1" color="#202140" sx={{textAlign: "center", mt: 3}}>
+                <Typography variant="body1" color="#202140" sx={{textAlign: "center", mt: 3, fontSize: { xs: "0.9rem", mobile: "1rem"}}}>
                     Copyright ©2022 All rights reserved | This template is made with by Kwesi-dev
                 </Typography>
             </Container>

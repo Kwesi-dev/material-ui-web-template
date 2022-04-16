@@ -14,7 +14,7 @@ const Slider = () => {
     const [firstSlide, setFirstSlide] = useState(false)
   return (
     <Box component="section" sx={{width: "100%", height: 550, mt: 12, position: "relative"}}>
-        <Box sx={{width: 40, height: 40 , display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: firstSlide ? "lightgray": "#ffff", position: "absolute", top: 0, left: -20, bottom: 0, m: "auto", zIndex: 999, cursor: "pointer"}} onClick={()=>swiper.slidePrev()}>
+        <Box sx={{width: 40, height: 40 , display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: firstSlide ? "lightgray": "#ffff", position: "absolute", top: 0, left: {xs:-10, md: -20}, bottom: 0, m: "auto", zIndex: 999, cursor: "pointer"}} onClick={()=>swiper.slidePrev()}>
             <ArrowRightAltIcon sx={{transform: "rotate(180deg)"}}/>
         </Box>
             <Swiper
@@ -48,7 +48,7 @@ const Slider = () => {
                     <Typography component="img" src={innerImage2} sx={{width: "100%", height: "100%", objectFit: "cover"}}/>
                 </SwiperSlide>
             </Swiper>
-            <Box sx={{width: 40, height: 40 , display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: lastSlide ? "lightgray": "#ffff", position: "absolute", top: 0, right: -20, bottom: 0, m: "auto", zIndex: 999, cursor: "pointer", }}  onClick={()=>swiper.slideNext()}>
+            <Box sx={{width: 40, height: 40 , display: "flex", alignItems: "center", justifyContent: "center", backgroundColor: lastSlide ? "lightgray": "#ffff", position: "absolute", top: 0, right: {xs:-10, md: -20}, bottom: 0, m: "auto", zIndex: 999, cursor: "pointer", }}  onClick={()=>swiper.slideNext()}>
                 <ArrowRightAltIcon/>
             </Box>
     </Box>

@@ -53,10 +53,10 @@ const AccordionComp = () => {
         <Typography variant="h6"component="h6" sx={{color: "#202140", fontWeight: "bold", mb: 1}}>Accordion</Typography>
         <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
             <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-            <Typography>How to download and register</Typography>
+            <Typography sx={{fontSize: { xs: "0.9rem", mobile: "1rem"}}}>How to download and register</Typography>
             </AccordionSummary>
             <AccordionDetails>
-            <Typography>
+            <Typography sx={{fontSize: { xs: "0.9rem", mobile: "1rem"}}}>
                 Far far away, behind the word mountains, far from the
                 countries Vokalia and Consonantia, there live the blind
                 texts. Separated they live in Bookmarksgrove right at
@@ -66,10 +66,10 @@ const AccordionComp = () => {
         </Accordion>
         <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
             <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-            <Typography>How to create your paypal account?</Typography>
+            <Typography sx={{fontSize: { xs: "0.9rem", mobile: "1rem"}}}>How to create your paypal account?</Typography>
             </AccordionSummary>
             <AccordionDetails>
-            <Typography>
+            <Typography sx={{fontSize: { xs: "0.9rem", mobile: "1rem"}}}>
               Far far away, behind the word mountains, far from the
               countries Vokalia and Consonantia, there live the blind
               texts. Separated they live in Bookmarksgrove right at
@@ -79,10 +79,10 @@ const AccordionComp = () => {
         </Accordion>
         <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
             <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-            <Typography>How to link your paypal and bank account</Typography>
+            <Typography sx={{fontSize: { xs: "0.9rem", mobile: "1rem"}}}>How to link your paypal and bank account</Typography>
             </AccordionSummary>
             <AccordionDetails>
-            <Typography>
+            <Typography sx={{fontSize: { xs: "0.9rem", mobile: "1rem"}}}>
               Far far away, behind the word mountains, far from the
               countries Vokalia and Consonantia, there live the blind
               texts. Separated they live in Bookmarksgrove right at
