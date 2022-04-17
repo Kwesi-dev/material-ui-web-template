@@ -14,7 +14,7 @@ import { Box } from '@mui/system'
 const Features = () => {
   return (
     <Paper sx={{width: "100%", py: 10, backgroundColor: "#f2f5fa"}} elevation={0}>
-        <Container maxWidth="md" sx={{width: "100%", py: 5}} justifyContent="center" alignItems="center">
+        <Container maxWidth="md" sx={{width: "100%", py: 5}}>
             <Grid container spacing={3}>
                 <Grid item xs={3}>
                     <img src={paypal} alt="paypal logo" style={{width: "100%"}} />

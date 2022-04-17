@@ -84,7 +84,7 @@ const Innerpage = () => {
                             <Typography variant="h6" component="h6" sx={{color: "#202140", fontWeight: "bold", mb: 1}}>Gallery</Typography>
                             <ImageList sx={{width: "100%", height: {mobile: "75vh", md:"60vh" }}} cols={3} rowHeight={180} gap={16}>
                                 {items.map((item)=>
-                                    <ImageListItem key={item.key} sx={{cursor: "pointer"}}>
+                                    <ImageListItem key={item.id} sx={{cursor: "pointer"}}>
                                         <img 
                                             src={item.image}
                                             srcSet={item.image} 

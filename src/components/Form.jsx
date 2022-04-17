@@ -1,8 +1,11 @@
 import { Paper, InputLabel, Select, MenuItem, Grid, Box, TextField, Typography, FormControl, FormControlLabel, Checkbox, Button } from '@mui/material'
-
 import React from 'react'
 
 const Form = () => {
+    const [change, setChange] = React.useState("")
+    const handleChange = () =>{
+        setChange(change)
+    }
   return (
       <Box sx={{width: "100%"}}>
         <Typography variant="h6"component="h6" sx={{color: "#202140", fontWeight: "bold", mb: 1}}>Form</Typography>
@@ -12,7 +15,6 @@ const Form = () => {
                     <Grid item xs={12} sm={6}>
                         <Typography component="h6" sx={{mb: 0.5, fontSize: { xs: "0.9rem", mobile: "1rem"}}}>First name</Typography>
                             <TextField
-                                id="text-input"
                                 type="text"
                                 sx={{width: "100%", fontSize: { xs: "0.9rem", mobile: "1rem"}}}
                                 />
@@ -20,7 +22,6 @@ const Form = () => {
                     <Grid item xs={12} sm={6}>
                         <Typography component="h6" sx={{mb: 0.5, fontSize: { xs: "0.9rem", mobile: "1rem"}}}>Last name</Typography>
                             <TextField
-                                id="text-input"
                                 type="text"
                                 sx={{width: "100%", fontSize: { xs: "0.9rem", mobile: "1rem"}}}
                                 />
@@ -60,6 +61,8 @@ const Form = () => {
                             labelId="demo-simple-select-label"
                             id="demo-simple-select"
                             label="KwesiDev"
+                            value={change}
+                            onChange={handleChange}
                             >
                             <MenuItem value="Job title">FrontEnd Developer</MenuItem>
                             <MenuItem value="opportunities">Always open to opportunities</MenuItem>

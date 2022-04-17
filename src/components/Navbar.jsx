@@ -3,8 +3,13 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { useState } from "react"
 import { KeyboardArrowRightOutlined } from "@mui/icons-material";
 import { Link } from "react-router-dom"
-const Navbar = ()=>{
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import MenuIcon from '@mui/icons-material/Menu';
+const Navbar = ({ drawerOpen, setDrawerOpen })=>{
     const [anchorEl, setAnchorEl] = useState(null)
+    const theme = useTheme()
+    const matches = useMediaQuery(theme.breakpoints.down("md"))
     const open = Boolean(anchorEl)
     const handleClick = (event)=>{
         setAnchorEl(event.currentTarget)
@@ -12,12 +17,14 @@ const Navbar = ()=>{
     const handleClose = ()=>{
         setAnchorEl(null)
     }
-
+    const handleOpen = () => {
+        setDrawerOpen(!drawerOpen)
+    }
     return(
         <>
             <AppBar sx={{backgroundColor: "#202140"}} elevation={0}>
                 <Container maxWidth="lg">
-                    <Toolbar sx={{alignItems: "center"}}>
+                    <Toolbar sx={{width: "100%", alignItems: "center"}}>
                         <Link to="/" style={{color: "inherit", textDecoration: "none"}}>
                             <Typography 
                                 variant="h5"
@@ -29,6 +36,7 @@ const Navbar = ()=>{
                                 Easy
                             </Typography>
                         </Link>
+                        {matches ? <MenuIcon sx={{ml: {xs: "40%", mobileSm: "60%", sm: "80%"}}} onClick={handleOpen}/> :
                         <Box sx={{flex: 3, display: {xs: "none", md:"flex"}, alignItems: "center", justifyContent: "space-between"}}>
                             <Box sx={{display: "flex", alignItems: "center"}}>
                                 <Link to="/" style={{color: "inherit", textDecoration: "none"}}>
@@ -70,7 +78,8 @@ const Navbar = ()=>{
                             <Box>
                                 <Button variant="outlined" color="error" sx={{color: "#ffff", borderRadius: 5, fontSize: 14}}>free templates</Button>
                             </Box>
-                        </Box>
+                        </Box>   
+                        }
                     </Toolbar>
                 </Container>
             </AppBar>
