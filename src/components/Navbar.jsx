@@ -36,7 +36,7 @@ const Navbar = ({ drawerOpen, setDrawerOpen })=>{
                                 Easy
                             </Typography>
                         </Link>
-                        {matches ? <MenuIcon sx={{ml: {xs: "40%", mobileSm: "60%", sm: "80%"}}} onClick={handleOpen}/> :
+                        {matches ? <MenuIcon sx={{ml: {xs: "50%", mobileSm: "60%", sm: "80%"}}} onClick={handleOpen}/> :
                         <Box sx={{flex: 3, display: {xs: "none", md:"flex"}, alignItems: "center", justifyContent: "space-between"}}>
                             <Box sx={{display: "flex", alignItems: "center"}}>
                                 <Link to="/" style={{color: "inherit", textDecoration: "none"}}>

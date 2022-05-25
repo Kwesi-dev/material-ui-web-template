@@ -1,4 +1,4 @@
-import { Box, TextareaAutosize, Paper, Container, Grid, Typography, TextField, Button } from '@mui/material'
+import { Box, Paper, Container, Grid, Typography, TextField, Button } from '@mui/material'
 import SapiensImg from "../assets/sapiens.webp"
 import Slant from "../assets/slant.svg"
 const Contact = () => {
